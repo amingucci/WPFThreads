@@ -1,4 +1,5 @@
 # WPFThreads
+
 Sviluppo App WPF                           1° Quadrimestre
 Inizio 13 ottobre 2022
 
@@ -42,7 +43,7 @@ Per aprirlo bisogna andare su “visualizza”, si aprirà un elenco andare dove
 CODICE:
 
 Dobbiamo lanciare un thread separato e fargli girare la velocità che vuole in modo da lasciare il thread della grafica in pace. 
-
+```
 private void Button_Click(object sender, RoutedEventArgs e)
         {
             //IncrementCounterProva();
@@ -82,6 +83,7 @@ private void Button_Click(object sender, RoutedEventArgs e)
         }
     }
 }
+```
 
 Quando la zona è invalidata l'interfaccia grafica è costretta a refreshare. Prima faceva vedere solo l'ultimo risultato, cioè 1000. 
 
@@ -125,7 +127,7 @@ CODICE COMPLETO:
 
 -Finestra MainWindow.xaml
 
-<Window x:Class="aurora.mingucci._4I.WPFTheads.MainWindow"
+```<Window x:Class="aurora.mingucci._4I.WPFTheads.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -157,13 +159,13 @@ CODICE COMPLETO:
             </TextBlock>
         </StackPanel>
     </Grid>
-</Window>
+</Window>```
 
 
 
 -Finestra MainWindow.cs
 
-using System;                                               | 
+```using System;                                               | 
 using System.Collections.Generic;               |
 using System.Diagnostics.Metrics;               |
 using System.Linq;                                       |
@@ -326,4 +328,4 @@ namespace aurora.mingucci._4I.WPFTheads
                                                                                                //GIRI
         }
     }
-}
+}```
